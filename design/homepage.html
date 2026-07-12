@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sands Mediation | Sibongile Pradhan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#f1dbff",
+                    "surface-container-high": "#eae8e7",
+                    "on-secondary-fixed": "#052013",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dcd9d9",
+                    "tertiary": "#301400",
+                    "on-primary-container": "#a98dc1",
+                    "on-tertiary-fixed": "#301400",
+                    "surface-container-low": "#f6f3f2",
+                    "background": "#fbf9f8",
+                    "tertiary-container": "#4a280a",
+                    "surface-bright": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "secondary-fixed-dim": "#afceb9",
+                    "surface-tint": "#6d5483",
+                    "secondary-fixed": "#cbead4",
+                    "on-tertiary-fixed-variant": "#653d1e",
+                    "on-primary-fixed": "#27103c",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "inverse-primary": "#d9bbf1",
+                    "surface-variant": "#e4e2e1",
+                    "on-surface-variant": "#4a454d",
+                    "tertiary-fixed-dim": "#f4bb92",
+                    "secondary-container": "#c8e7d1",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#d9bbf1",
+                    "primary-container": "#3d2652",
+                    "primary": "#27103c",
+                    "outline": "#7c757e",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "secondary": "#496553",
+                    "on-secondary-container": "#4d6957",
+                    "on-secondary-fixed-variant": "#314d3c",
+                    "outline-variant": "#cdc4ce",
+                    "on-tertiary-container": "#c18d68",
+                    "tertiary-fixed": "#ffdcc5",
+                    "inverse-surface": "#303030",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-primary-fixed-variant": "#553d6a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px",
+                    "base": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Source Serif 4"],
+                    "body-md": ["Manrope"],
+                    "headline-lg-mobile": ["Source Serif 4"],
+                    "body-lg": ["Manrope"],
+                    "label-xs": ["Manrope"],
+                    "headline-md": ["Source Serif 4"],
+                    "label-sm": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-xs": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(251, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 40px -10px rgba(39, 16, 60, 0.05);
+            border: 1px solid rgba(124, 117, 126, 0.1);
+        }
+        .breathing {
+            animation: pulse-slow 8s ease-in-out infinite;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 docked full-width top-0 sticky bg-background/80 backdrop-blur-xl">
+<div class="h-10 flex items-center"><img src="https://lh3.googleusercontent.com/aida/AP1WRLsVfUFiC4D_brOfpji8HMg12Yl4K1wQWpVtyvgDOWfKGNo8pac9EVv9W1rjSouabuDl6X5mIGQ7m_ClBpADWymwsDvx9m4pNXe2hOcJdQgtitG4umgv-PtSuKEua-PekPNVf8X3VQqbER93aQyA670bVV2ZxsB7od2xgkDYONt88dvmodPaipHPtprxNP0fpoF4XhXecfuA4PTavdxCDxgSlGpqVO6HFdQx2jwbSrRdCk3P-_JkvEaC_34" alt="Sibongile Logo" class="h-8 md:h-10 w-auto object-contain"></div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#">Contact</a>
+<button class="ml-4 px-6 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:opacity-90 transition-opacity">
+            Book Session
+        </button>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col md:flex-row items-center px-margin-mobile md:px-margin-desktop py-12 gap-12 overflow-hidden bg-surface">
+<!-- Background Decorative Element -->
+<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-fixed/30 blur-[120px] -z-10"></div>
+<div class="w-full md:w-1/2 z-10">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6 leading-tight">
+                Restoring Relationships,<br>Finding Peace.
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                I hold space for people to bring their conflict into the open, where they can each be heard for what deeply matters. 
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:brightness-110 transition-all shadow-lg">
+                    Explore Mediation
+                </button>
+<button class="px-8 py-4 border border-outline text-primary font-headline-md italic rounded-lg hover:bg-surface-container-low transition-all">
+                    Get in Touch
+                </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center items-center relative">
+<!-- Portrait with soft lift shadow -->
+<div class="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30">
+<img alt="A professional portrait of Sibongile Pradhan set against a soft watercolor painting of the Scottish Highlands with rolling hills and purple heather." class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdShKwkSzhh_3F8_y4rT-we1_2QnF473Rh2jvG5mWQtsFaAgHpooTTMz4sRmaF3hnQOcpZV1e40lc3fMjlIsWMJu9H-SMMXJWDcxZPxM2bYC5hcKInV5NKj9BHIGom6Qy-Tn9OirX-NHAKBnTrnfQlOiLIw6pUA3UKAKdievVDqhslOqlBBvVxc2CK8-tX6yXtxLFmWtwGKCHUC6tH-kPuICzMI5HzT90urP5tuqpiTdCRv91tXzrCe803jP9nLFGC4mTCBjhZ8HA">
+<div class="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
+</div>
+<!-- Artistic Float -->
+<div class="absolute -bottom-6 -left-6 md:-left-12 p-8 glass-card rounded-xl hidden md:block transition-all duration-1000 opacity-100 translate-y-0">
+<p class="font-headline-md italic text-primary">"Space to breathe."</p>
+<p class="font-label-sm text-on-surface-variant mt-2 text-[10px]">Sibongile Pradhan</p>
+</div>
+</div>
+</section>
+<!-- Core Philosophy (Bento Style) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-[#f5f0f7]">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-primary font-label-sm text-label-sm mb-4 block tracking-widest uppercase">OUR APPROACH</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight text-primary">
+                        A practice rooted in empathy and restorative justice.
+                    </h2>
+</div>
+<div class="h-[1px] flex-grow bg-outline-variant/50 mx-8 hidden md:block mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- NVC Grid Item -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-2xl flex flex-col justify-between border border-outline-variant/30 shadow-sm transition-all duration-1000 opacity-100 translate-y-0">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">The NVC Method</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                            Nonviolent Communication (NVC) is more than a technique; it is a consciousness of connection. We move beyond blame to identify the underlying needs that drive our actions, creating a bridge where there was once a wall.
+                        </p>
+</div>
+<div class="mt-8 border-t border-outline-variant/20 pt-6">
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-[#553d6a]"></span>
+<span class="font-label-sm text-on-surface">Observations without judgment</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-[#553d6a]"></span>
+<span class="font-label-sm text-on-surface">Feelings as navigational guides</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-[#553d6a]"></span>
+<span class="font-label-sm text-on-surface">Universal needs at the core</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Relational Focus Grid Item -->
+<div class="md:col-span-5 p-10 rounded-2xl border border-primary-container/20 bg-[#ece4f1]">
+<h3 class="font-headline-md text-headline-md mb-6 italic text-primary">Restoring Ties</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-10">
+                        Conflict often arises where there is the most at stake. I specialize in existing relationships where the goal isn't just to end the dispute, but to heal the foundation.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-2xl mt-1 text-[#553d6a]" data-icon="groups">groups</span>
+<div>
+<h4 class="font-label-sm text-on-surface">Professional Teams</h4>
+<p class="text-xs text-on-surface-variant mt-1">Transforming office tension into collaborative flow.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-2xl mt-1 text-[#553d6a]" data-icon="family_history">family_history</span>
+<div>
+<h4 class="font-label-sm text-on-surface">Family Units</h4>
+<p class="text-xs text-on-surface-variant mt-1">Navigating transitions with dignity and care.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-2xl mt-1 text-[#553d6a]" data-icon="diversity_2">diversity_2</span>
+<div>
+<h4 class="font-label-sm text-on-surface">Lifelong Friendships</h4>
+<p class="text-xs text-on-surface-variant mt-1">Reclaiming the warmth of shared history.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Atmospheric Quote Card -->
+<div class="md:col-span-12 py-24 flex flex-col items-center text-center">
+<div class="w-20 h-1 bg-primary mb-12 opacity-20"></div>
+<blockquote class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary italic max-w-4xl leading-snug">
+                        "Conflict is an opportunity to learn what deeply matters to each of us. My role is to hold the container where that discovery can happen."
+                    </blockquote>
+<div class="mt-12 flex items-center gap-4">
+<div class="w-10 h-[1px] bg-outline"></div>
+<p class="font-label-sm text-primary uppercase tracking-widest text-[12px]">The Sands Philosophy</p>
+<div class="w-10 h-[1px] bg-outline"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Content Section -->
+<section class="py-24 relative px-margin-mobile md:px-margin-desktop overflow-hidden bg-[#f5f0f7]">
+<div class="absolute inset-0 -z-10 overflow-hidden">
+<div class="absolute top-1/2 left-1/4 w-[800px] h-[800px] bg-secondary-fixed/10 rounded-full blur-[150px]"></div>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl group border border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" data-alt="A tranquil landscape at twilight with a calm body of water reflecting a deep purple and indigo sky. In the foreground, soft tall grass sways gently. The lighting is low and atmospheric, evoking a sense of deep peace and grounded privacy. The overall style is moody, editorial, and sophisticated, aligning with a therapeutic healing space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJVwEUqNw9irKPSAA3-9zqznvKkT1YgRbxL2i0Lvssh5t_OJ3VwMBsYbJhap1WqTN-TIMFyVeD_1bzk9ZpDonvFqSGHw5PUXsIFePz0nMzjloiVfV1_vthEFBhdxSVbtLD96Abtcs_pMA8XA0zCzHBY3gaqLdN_GYTXK7AaUqhZ2NHHIOK7locrmRWj3MEPzhayFf4eo_K8pY_sguhqiIQu9J1VfJg1WkPJpEzQytLGkrkMfyeztmXiNAZ3i_5s5s91bRi1aKGa6g">
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-60"></div>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8 italic">The Mediation Journey</h2>
+<div class="space-y-12">
+<div class="relative pl-12 border-l border-outline-variant/50 pb-4">
+<div class="absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full bg-primary breathing"></div>
+<h3 class="font-label-sm text-primary mb-2 uppercase tracking-wider">01. INTAKE</h3>
+<p class="font-body-md text-on-surface-variant text-primary">Individual private sessions to understand the nuances of your perspective in a safe, confidential space.</p>
+</div>
+<div class="relative pl-12 border-l border-outline-variant/50 pb-4">
+<div class="absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full bg-outline"></div>
+<h3 class="font-label-sm text-primary mb-2 uppercase tracking-wider">02. JOINT FACILITATION</h3>
+<p class="font-body-md text-on-surface-variant text-primary">A guided dialogue where we bring the separate threads together into a cohesive conversation focused on needs.</p>
+</div>
+<div class="relative pl-12">
+<div class="absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full bg-outline"></div>
+<h3 class="font-label-sm text-primary mb-2 uppercase tracking-wider">03. RESTORATION</h3>
+<p class="font-body-md text-on-surface-variant text-primary">Forging new agreements and pathways for communication that honor the integrity of everyone involved.</p>
+</div>
+</div>
+<button class="mt-12 px-10 py-5 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:shadow-xl transition-all">
+                    Schedule a Consultation
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-highest">
+<div class="mb-12 md:mb-0">
+<div class="font-headline-lg text-headline-lg-mobile text-primary mb-4 italic">Sands Mediation</div>
+<p class="font-body-md text-on-surface-variant max-w-xs opacity-70">© 2024 Sands Mediation. Sibongile Pradhan.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="flex flex-col gap-4">
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="mailto:sibongilep@gmail.com">sibongilep@gmail.com</a>
+<span class="text-on-surface-variant font-label-sm text-label-sm opacity-70">Grampian, Highland</span>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="mt-12 md:mt-0 flex gap-6">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:scale-95 transition-transform duration-500" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="link">link</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:scale-95 transition-transform duration-500" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+</div>
+</footer>
+<script>
+    // Smooth reveal on scroll for sections and cards
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card, [class*="bg-surface-container-lowest"]').forEach(el => {
+        el.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-1000');
+        observer.observe(el);
+    });
+</script>
+
+
+</body></html>

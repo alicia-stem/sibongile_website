@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sibongile-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8722"],
+      "port": 8722
+    }
+  ]
+}

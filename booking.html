@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Book a Free Session | Sibongile Pradhan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Manrope:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#f1dbff",
+                    "surface-container-high": "#eae8e7",
+                    "on-secondary-fixed": "#052013",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2e1",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dcd9d9",
+                    "tertiary": "#301400",
+                    "on-primary-container": "#a98dc1",
+                    "on-tertiary-fixed": "#301400",
+                    "surface-container-low": "#f6f3f2",
+                    "background": "#fbf9f8",
+                    "tertiary-container": "#4a280a",
+                    "surface-bright": "#fbf9f8",
+                    "on-background": "#1b1c1c",
+                    "secondary-fixed-dim": "#afceb9",
+                    "surface-tint": "#6d5483",
+                    "secondary-fixed": "#cbead4",
+                    "on-tertiary-fixed-variant": "#653d1e",
+                    "on-primary-fixed": "#27103c",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "inverse-primary": "#d9bbf1",
+                    "surface-variant": "#e4e2e1",
+                    "on-surface-variant": "#4a454d",
+                    "tertiary-fixed-dim": "#f4bb92",
+                    "secondary-container": "#c8e7d1",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#d9bbf1",
+                    "primary-container": "#3d2652",
+                    "primary": "#27103c",
+                    "outline": "#7c757e",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "secondary": "#496553",
+                    "on-secondary-container": "#4d6957",
+                    "on-secondary-fixed-variant": "#314d3c",
+                    "outline-variant": "#cdc4ce",
+                    "on-tertiary-container": "#c18d68",
+                    "tertiary-fixed": "#ffdcc5",
+                    "inverse-surface": "#303030",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-primary-fixed-variant": "#553d6a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px",
+                    "base": "8px",
+                    "container-max": "1280px",
+                    "section-gap": "128px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Source Serif 4"],
+                    "body-md": ["Manrope"],
+                    "display-lg": ["Source Serif 4"],
+                    "headline-lg-mobile": ["Source Serif 4"],
+                    "body-lg": ["Manrope"],
+                    "label-xs": ["Manrope"],
+                    "headline-md": ["Source Serif 4"],
+                    "label-sm": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-xs": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 top-0 sticky bg-background/80 backdrop-blur-xl border-b border-surface-container-highest">
+<a class="h-12 flex items-center gap-3" href="index.html">
+<img src="assets/logo.png" alt="Sibongile logo — two hands holding a flower bud" class="h-12 w-auto object-contain">
+</a>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="index.html#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="index.html#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="index.html#contact">Contact</a>
+<span class="ml-4 px-6 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg border-b-2 border-primary">
+            Book a Free Session
+        </span>
+</nav>
+<button aria-label="Open menu" class="md:hidden text-primary" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Mobile menu -->
+<div class="hidden md:hidden flex-col gap-4 px-margin-mobile py-6 bg-background border-b border-surface-container-highest sticky top-[81px] z-40" id="mobile-menu">
+<a class="text-on-surface-variant font-label-sm text-label-sm" href="index.html">Home</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm" href="index.html#services">Services</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm" href="index.html#about">About</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm" href="index.html#contact">Contact</a>
+</div>
+<main>
+<!-- Booking Hero -->
+<section class="relative px-margin-mobile md:px-margin-desktop pt-16 pb-12 overflow-hidden bg-surface">
+<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-fixed/30 blur-[120px] -z-10"></div>
+<div class="max-w-container-max mx-auto text-center">
+<span class="font-label-sm text-on-primary-fixed-variant tracking-[0.2em] uppercase">BOOKING</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight mt-4">Book a Free 50-Minute Session</h1>
+<p class="font-body-md text-on-surface-variant text-lg max-w-2xl mx-auto mt-6">
+            Every area of my work begins with a free 50-minute session (no strings) &mdash; a chance to meet, sample a session or discuss what you&rsquo;re looking for, and see whether working together feels right.
+        </p>
+</div>
+</section>
+<!-- Booking form + info -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 bg-[#f5f0f7]">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Form -->
+<div class="md:col-span-7 bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/30 shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Request your free session</h2>
+<p class="font-body-md text-on-surface-variant mb-8">Fill in the form and it will open an email to Sibongile with your details &mdash; she&rsquo;ll reply to arrange a time.</p>
+<form class="space-y-6" id="booking-form">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="name">Your name</label>
+<input class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="name" name="name" required="" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="email">Your email</label>
+<input class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="email" name="email" required="" type="email">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="area">What would you like the session to focus on?</label>
+<select class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="area" name="area">
+<option>NVC Coaching — sample coaching</option>
+<option>NVC Training — discuss training needs</option>
+<option>Deep Listening akin to Counselling — initial session</option>
+<option>Mediation — talk about what you're looking for</option>
+<option>Group Facilitation — discuss what you seek</option>
+<option>Grief Tending — initial session</option>
+<option>Not sure yet — let's talk</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="message">Anything you'd like to share in advance? <span class="text-on-surface-variant font-normal">(optional)</span></label>
+<textarea class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="message" name="message" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-sm tracking-[0.1em] uppercase hover:bg-primary-container transition-all shadow-md" type="submit">Send booking request</button>
+<p class="font-body-md text-on-surface-variant text-sm">Prefer to write directly? Email <a class="underline text-primary" href="mailto:sibongilep@gmail.com">sibongilep@gmail.com</a></p>
+</form>
+</div>
+<!-- Info panel -->
+<div class="md:col-span-5 space-y-8">
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/30 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">What to expect</h3>
+<ul class="space-y-5">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#553d6a] mt-1">schedule</span>
+<p class="font-body-md text-on-surface-variant">A free 50-minute session &mdash; no strings, no obligation to continue.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#553d6a] mt-1">forum</span>
+<p class="font-body-md text-on-surface-variant">Space to sample coaching or deep listening, or to talk through mediation, facilitation, training or grief tending needs.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#553d6a] mt-1">lock</span>
+<p class="font-body-md text-on-surface-variant">Private and confidential, held without judgment.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#553d6a] mt-1">location_on</span>
+<p class="font-body-md text-on-surface-variant">Based in Edinburgh yet happy to travel; sessions also available online.</p>
+</li>
+</ul>
+</div>
+<div class="bg-primary-container p-8 rounded-2xl relative overflow-hidden">
+<div class="absolute right-0 top-0 w-2/3 h-full opacity-20 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-fixed via-transparent to-transparent"></div>
+</div>
+<blockquote class="font-headline-md text-headline-md italic text-on-primary relative z-10">
+                &ldquo;When people experience being heard and understood, new possibilities emerge.&rdquo;
+            </blockquote>
+<p class="font-label-sm text-primary-fixed uppercase tracking-widest text-[12px] mt-6 relative z-10">Sibongile Pradhan</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-highest">
+<div class="mb-12 md:mb-0">
+<img src="assets/logo.png" alt="Sibongile logo" class="h-14 w-auto object-contain mb-4">
+<p class="font-body-md text-on-surface-variant max-w-xs opacity-70">&copy; 2026 Sibongile Pradhan.<br>Mediation &bull; Coaching &bull; Deep Listening &bull; Facilitation &bull; Training &bull; Grief Tending</p>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="flex flex-col gap-4">
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="mailto:sibongilep@gmail.com">sibongilep@gmail.com</a>
+<span class="text-on-surface-variant font-label-sm text-label-sm opacity-70">Edinburgh, Scotland</span>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="index.html#services">Areas of Work</a>
+<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="index.html#contact">Contact</a>
+</div>
+</div>
+</footer>
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+
+    // Booking form -> mailto
+    document.getElementById('booking-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const area = document.getElementById('area').value;
+        const message = document.getElementById('message').value.trim();
+        const subject = encodeURIComponent('Free 50-minute session request — ' + name);
+        const body = encodeURIComponent(
+            'Hello Sibongile,\n\n' +
+            'I would like to book a free 50-minute session.\n\n' +
+            'Name: ' + name + '\n' +
+            'Email: ' + email + '\n' +
+            'Focus: ' + area + '\n' +
+            (message ? '\n' + message + '\n' : '') +
+            '\nThank you!'
+        );
+        window.location.href = 'mailto:sibongilep@gmail.com?subject=' + subject + '&body=' + body;
+    });
+</script>
+</body>
+</html>
