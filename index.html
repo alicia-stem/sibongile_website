@@ -85,14 +85,14 @@
                     "label-sm": ["Manrope"]
             },
             "fontSize": {
-                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "label-xs": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
-                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}]
+                    "headline-lg": ["44px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["17px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["52px", {"lineHeight": "62px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["34px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-xs": ["13px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["26px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["16px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "600"}]
             }
           },
         },
@@ -100,6 +100,8 @@
     </script>
 <style>
         html { scroll-behavior: smooth; }
+        /* Offset in-page anchors so section tops clear the sticky header */
+        section[id] { scroll-margin-top: 84px; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
             vertical-align: middle;
@@ -122,14 +124,14 @@
 <body class="bg-background text-on-background font-body-md overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
 <header class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 top-0 sticky bg-background/80 backdrop-blur-xl border-b border-surface-container-highest">
-<a class="h-12 flex items-center gap-3" href="#home">
-<img src="assets/logo.png" alt="Sibongile logo — two hands holding a flower bud" class="h-12 w-auto object-contain">
+<a class="flex items-center gap-3" href="#home">
+<img src="assets/logo-sibongile-2.png" alt="Sibongile" class="h-14 md:h-16 w-auto object-contain">
 </a>
 <nav class="hidden md:flex items-center gap-gutter">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm" href="#home">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#services">Services</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-label-sm" href="#contact">Contact</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-2xl" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-2xl" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-2xl" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-2xl" href="#contact">Contact</a>
 <a class="ml-4 px-6 py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:opacity-90 transition-opacity" href="booking.html">
             Book a Free Session
         </a>
@@ -140,31 +142,33 @@
 </header>
 <!-- Mobile menu -->
 <div class="hidden md:hidden flex-col gap-4 px-margin-mobile py-6 bg-background border-b border-surface-container-highest sticky top-[81px] z-40" id="mobile-menu">
-<a class="text-primary font-label-sm text-label-sm" href="#home">Home</a>
-<a class="text-on-surface-variant font-label-sm text-label-sm" href="#services">Services</a>
-<a class="text-on-surface-variant font-label-sm text-label-sm" href="#about">About</a>
-<a class="text-on-surface-variant font-label-sm text-label-sm" href="#contact">Contact</a>
+<a class="text-primary font-label-sm text-2xl" href="#home">Home</a>
+<a class="text-on-surface-variant font-label-sm text-2xl" href="#services">Services</a>
+<a class="text-on-surface-variant font-label-sm text-2xl" href="#about">About</a>
+<a class="text-on-surface-variant font-label-sm text-2xl" href="#contact">Contact</a>
 <a class="px-6 py-3 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg text-center" href="booking.html">Book a Free Session</a>
 </div>
 <main>
 <!-- ===================== HOME ===================== -->
-<section class="relative min-h-[90vh] flex flex-col md:flex-row items-center px-margin-mobile md:px-margin-desktop py-12 gap-12 overflow-hidden bg-surface" id="home">
+<section class="relative overflow-hidden bg-surface" id="home">
 <!-- Background Decorative Element -->
-<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-fixed/30 blur-[120px] -z-10"></div>
-<div class="w-full md:w-1/2 z-10">
-<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4 leading-tight">
+<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-fixed/50 blur-[120px] -z-10"></div>
+<div class="absolute -bottom-1/3 -left-1/4 w-[700px] h-[700px] rounded-full bg-secondary-fixed/20 blur-[120px] -z-10"></div>
+<div class="max-w-container-max mx-auto w-full flex flex-col md:flex-row items-center gap-10 md:gap-14 px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+<div class="w-full md:w-3/5 z-10">
+<h1 class="font-headline-lg font-bold text-3xl sm:text-4xl lg:text-5xl text-primary mb-5 leading-tight whitespace-nowrap">
                 Sibongile Pradhan
             </h1>
 <p class="font-label-sm text-label-sm text-on-primary-fixed-variant tracking-widest uppercase mb-8">
                 Mediation &bull; Coaching &bull; Deep Listening &bull; Facilitation &bull; Training &bull; Grief Tending
             </p>
-<p class="font-body-lg text-body-lg text-on-surface mb-6 leading-relaxed max-w-lg">
+<p class="font-body-lg text-body-lg text-on-surface mb-6 leading-relaxed max-w-2xl">
                 Hello.
             </p>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-6 leading-relaxed">
-                I help individuals, couples, families and teams strengthen communication, navigate conflict and express grief &mdash; through mediation, coaching, deep listening, facilitation, training and grief tending.
+<p class="font-body-lg text-body-lg text-on-surface max-w-2xl mb-6 leading-relaxed">
+                I help individuals, couples, families and teams strengthen communication, navigate conflict and express grief, through mediation, coaching, deep listening, facilitation, training and grief tending.
             </p>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
                 My work is grounded in Nonviolent Communication (NVC), and draws on eight years of counselling experience and accredited mediation training. I bring warmth, curiosity and deep listening to every conversation. Based in Edinburgh, happy to travel.
             </p>
 <div class="flex flex-wrap gap-4">
@@ -176,16 +180,17 @@
                 </a>
 </div>
 </div>
-<div class="w-full md:w-1/2 flex justify-center items-center relative">
+<div class="w-full md:w-2/5 flex justify-center md:justify-end items-center relative">
 <!-- Portrait with soft lift shadow -->
 <div class="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30">
 <img alt="Watercolor portrait of Sibongile Pradhan against rolling Scottish hills" class="w-full h-full object-cover transition-all duration-700" src="assets/sibongile.png">
 <div class="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
 </div>
 <!-- Artistic Float -->
-<div class="absolute -bottom-6 -left-6 md:-left-12 p-8 glass-card rounded-xl hidden md:block">
+<div class="absolute -bottom-6 -left-6 p-6 glass-card rounded-xl hidden md:block">
 <p class="font-headline-md italic text-primary">"Space to breathe."</p>
 <p class="font-label-sm text-on-surface-variant mt-2 text-[10px]">Sibongile Pradhan</p>
+</div>
 </div>
 </div>
 </section>
@@ -195,135 +200,135 @@
 <span class="material-symbols-outlined text-primary mt-4 breathing">arrow_downward</span>
 </section>
 <!-- ===================== SERVICES ===================== -->
-<section id="services">
+<section class="bg-surface-container-lowest" id="services">
 <!-- Header Section -->
 <div class="px-margin-mobile md:px-margin-desktop pt-16 pb-10 max-w-container-max mx-auto text-center">
 <span class="font-label-sm text-on-primary-fixed-variant tracking-[0.2em] uppercase">THE FIVE ELEMENTS OF MY WORK</span>
 <h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface leading-tight mt-3">Areas of Work</h2>
 </div>
 <!-- NVC Coaching and Training -->
-<section class="bg-[#fbf9f8]" id="nvc">
+<section id="nvc">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-14 md:py-16 flex flex-col md:flex-row gap-10 items-center">
-<div class="w-full md:w-1/2">
-<img alt="People in a sunlit garden" class="w-full h-[360px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCIsukWqifDlR4cEmhbK0xdtCF4mZ3Q7jCsosnGwt17H6KUBO_DiaEqHpUO_LxGvM4vUse4h9uGqLLbxuiMfE6rEDJ0LMK8pcqFJUKTfHI5fR1q6KkF6geu5W_qcpYLUG36zocpMSQ_mW9XwLoVDCGj61pQCut-PJcbq65-hr2lcxzsHmmLyNutCstNqgK-nf9umB7f63cpx38-oOutnSNYI6zwzavymZ5MbZoJRigJkunwWsq97xpKl3A9KmSwdVDDXgGrkWb17o"/>
+<div class="w-full md:w-2/5">
+<img alt="People in a sunlit garden" class="w-full h-[460px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCIsukWqifDlR4cEmhbK0xdtCF4mZ3Q7jCsosnGwt17H6KUBO_DiaEqHpUO_LxGvM4vUse4h9uGqLLbxuiMfE6rEDJ0LMK8pcqFJUKTfHI5fR1q6KkF6geu5W_qcpYLUG36zocpMSQ_mW9XwLoVDCGj61pQCut-PJcbq65-hr2lcxzsHmmLyNutCstNqgK-nf9umB7f63cpx38-oOutnSNYI6zwzavymZ5MbZoJRigJkunwWsq97xpKl3A9KmSwdVDDXgGrkWb17o"/>
 </div>
-<div class="w-full md:w-1/2 space-y-4">
-<h3 class="font-headline-lg text-xl md:text-2xl text-on-surface leading-snug">Nonviolent Communication (NVC) Coaching and Training</h3>
+<div class="w-full md:w-3/5 space-y-4">
+<h3 class="font-headline-lg font-bold text-2xl md:text-3xl text-on-surface leading-snug">Nonviolent Communication (NVC) Coaching and Training</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
 <strong class="text-on-surface">Coaching.</strong> If you would like to deepen your NVC practice, I offer coaching based on real situations in your life. I&rsquo;ll support you to connect with the feelings and needs beneath the words and actions of yourself and others, uncover what really matters to you, and find ways to express it authentically and with care for both yourself and the other.
                 </p>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
 <strong class="text-on-surface">Training.</strong> I offer training in the fundamentals of NVC for individuals, couples, families and teams, over a timeframe that suits you. Twice a year I co-teach the NVC Foundation Training in central Scotland with a colleague.
                 </p>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;Working with Sibongile has been genuinely transformative. With warmth and deep empathy, she guides me to reconnect with past versions of myself, understand long-held triggers, and move through blocks that once felt stuck. Each session leaves me with clarity, compassion, and a powerful shift.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Alicia</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Alicia</span>
 </div>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;Sibongile gracefully offered excellent, relatable NVC lessons and live practice to our wiggly, active family. Our two youngest children (11 and 14), who are most often in conflict, eagerly awaited each session. My new NVC outlook supports me to go beyond reacting to reflecting. Our whole family is grateful for our time with her!&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Laura</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Laura</span>
 </div>
-<a class="inline-block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-sm tracking-[0.05em] uppercase hover:bg-primary-container transition-all shadow-md" href="booking.html">Book a free 50m session to sample coaching or discuss training</a>
+<a class="inline-flex items-center justify-center text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-sm text-base font-bold tracking-wide shadow-lg hover:bg-primary-container hover:shadow-xl hover:-translate-y-0.5 transition-all" href="booking.html?focus=nvc">Book a free 50 minute session to sample coaching or discuss training</a>
 </div>
 </div>
 </section>
 <!-- Deep Listening -->
-<section class="bg-[#f7f3f7]" id="deep-listening">
+<section id="deep-listening">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-14 md:py-16 flex flex-col md:flex-row-reverse gap-10 items-center">
-<div class="w-full md:w-1/2">
-<img alt="Soft light in a quiet room" class="w-full h-[360px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw3Nx-nMEXZvLNzXIp7VbFplts2UwVhvNDn-BCTjmNog25rJ0E-ELPgCwWEHxUajZDDXaWe2x0Kix15d-9I35nRIbAZO67hmLQDUPEtIuvl0rcRo_hic9264D5__qBmgJK1Z0GG9xoDcwtJ09F05W37wtA1joQ7MmpranLwNAGv4DSkISQoLtTdCwkhirRiT9yECh8UVVOcrarUrFSrYCzmLy6uL7YN_MxFdljb958epSfkjDAt0EDtCQNbttD54ipId1-04uwFPQ"/>
+<div class="w-full md:w-2/5">
+<img alt="Soft light in a quiet room" class="w-full h-[460px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw3Nx-nMEXZvLNzXIp7VbFplts2UwVhvNDn-BCTjmNog25rJ0E-ELPgCwWEHxUajZDDXaWe2x0Kix15d-9I35nRIbAZO67hmLQDUPEtIuvl0rcRo_hic9264D5__qBmgJK1Z0GG9xoDcwtJ09F05W37wtA1joQ7MmpranLwNAGv4DSkISQoLtTdCwkhirRiT9yECh8UVVOcrarUrFSrYCzmLy6uL7YN_MxFdljb958epSfkjDAt0EDtCQNbttD54ipId1-04uwFPQ"/>
 </div>
-<div class="w-full md:w-1/2 space-y-4">
-<h3 class="font-headline-lg text-xl md:text-2xl text-on-surface leading-snug">Deep Listening akin to Counselling</h3>
+<div class="w-full md:w-3/5 space-y-4">
+<h3 class="font-headline-lg font-bold text-2xl md:text-3xl text-on-surface leading-snug">Deep Listening akin to Counselling</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     I offer sessions to which you can bring your thoughts, feelings, fears and desires, where everything is welcome without judgment. I&rsquo;ll support you to connect with your emotions, explore what is going on for you, and connect with what deeply matters. The sessions are led by you and held by me.
                 </p>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     I have eight years of counselling experience and training in counselling skills. While I am not a certified counsellor or therapist, many clients experience working with me as therapeutic. My approach is intuitive, relational, and grounded in nonviolent communication.
                 </p>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;Over the years, Sibongile has offered me a warm and non-judgemental space where I felt supported and heard, as well as encouraged and inspired. She has helped me disentangle situations of conflict, and more recently, accompanied me during a long journey back to health.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Fl</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Fl</span>
 </div>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;I have some change coming up and struggle with decision making which I think has been caused by trauma. I&rsquo;ve been able to do some really interesting work on understanding parts of myself, linked to younger ages, with empathy. The emphasis on body and feelings has been very useful.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Ph</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Ph</span>
 </div>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;Sibongile has been really good at holding the space for me, she has a calming energy. She has encouraged me to be curious and explore how I feel in a very non-judgemental way. I&rsquo;ve been glad to learn ways to cope with the symptoms of trauma that is not medicine based. It&rsquo;s been amazing.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Ka</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Ka</span>
 </div>
-<a class="inline-block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-sm tracking-[0.05em] uppercase hover:bg-primary-container transition-all shadow-md" href="booking.html">Book an initial free 50m session (no strings)</a>
+<a class="inline-flex items-center justify-center text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-sm text-base font-bold tracking-wide shadow-lg hover:bg-primary-container hover:shadow-xl hover:-translate-y-0.5 transition-all" href="booking.html?focus=deep-listening">Book an initial free 50 minute session (no strings)</a>
 </div>
 </div>
 </section>
 <!-- Mediation -->
-<section class="bg-[#f2ecf3]" id="mediation">
+<section id="mediation">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-14 md:py-16 flex flex-col md:flex-row gap-10 items-center">
-<div class="w-full md:w-1/2">
-<img alt="Bridge over a stream" class="w-full h-[360px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM7vIvr3up9saa21UhlkAwIazQabXwesZeYetVTJ3GYkgqpQy_U7wJEMPAsxZ8wqZjVqNWiXkqBdMDrVX8GxmKMVbux2lwLacxBllzxfnm8pcvI6FvGZ6mZkx7wfkY-al399ZySdyvg-u7oN5GQ5_C3sHXIuqxbaU5JcUWKEBZjwezNitTNXnzxoaOV9YXQQNPn-fRVCmMSyYqSLBAXdH-CfntqnDWwnStkZ2b-aHuvlHhcLdw3rEm_zXjF3iY9XgRoT4liYNB2ig"/>
+<div class="w-full md:w-2/5">
+<img alt="Bridge over a stream" class="w-full h-[460px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM7vIvr3up9saa21UhlkAwIazQabXwesZeYetVTJ3GYkgqpQy_U7wJEMPAsxZ8wqZjVqNWiXkqBdMDrVX8GxmKMVbux2lwLacxBllzxfnm8pcvI6FvGZ6mZkx7wfkY-al399ZySdyvg-u7oN5GQ5_C3sHXIuqxbaU5JcUWKEBZjwezNitTNXnzxoaOV9YXQQNPn-fRVCmMSyYqSLBAXdH-CfntqnDWwnStkZ2b-aHuvlHhcLdw3rEm_zXjF3iY9XgRoT4liYNB2ig"/>
 </div>
-<div class="w-full md:w-1/2 space-y-4">
-<h3 class="font-headline-lg text-xl md:text-2xl text-on-surface leading-snug">Mediation</h3>
+<div class="w-full md:w-3/5 space-y-4">
+<h3 class="font-headline-lg font-bold text-2xl md:text-3xl text-on-surface leading-snug">Mediation</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                    I offer mediation where there are existing relationships to be restored &mdash; between colleagues, friends, partners, neighbours, family members, students or community group members &mdash; where a rift has occurred and all parties are keen to repair it, or at least willing to give it a go.
+                    I offer mediation where there are existing relationships to be restored, between colleagues, friends, partners, neighbours, family members, students or community group members, where a rift has occurred and all parties are keen to repair it, or at least willing to give it a go.
                 </p>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Usually working alongside a mediation colleague, I hold space for conflict to be brought into the open, where each person can be heard for what matters to them, understand what&rsquo;s going on for the other, and explore options for moving forward in a way that works well-enough for everyone. Our approach has nonviolent communication at its heart, is accredited through Scottish Mediation and certified through the University of St Andrews Mediation Service.
                 </p>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;Thank you, Sibongile, for your beautiful facilitation. We came away from our session very happy; feeling a sense of lightness and new possibility. Your active presence and facilitation very effectively put us at ease, encouraged us to express ourselves and listen to each other deeply, and moved us forward gently yet deliberately.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Marie-Am&eacute;lie (family mediation)</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Marie-Am&eacute;lie (family mediation)</span>
 </div>
-<a class="inline-block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-sm tracking-[0.05em] uppercase hover:bg-primary-container transition-all shadow-md" href="booking.html">Book a free 50m meeting to talk about what you're looking for</a>
+<a class="inline-flex items-center justify-center text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-sm text-base font-bold tracking-wide shadow-lg hover:bg-primary-container hover:shadow-xl hover:-translate-y-0.5 transition-all" href="booking.html?focus=mediation">Book a free 50 minute meeting to talk about what you're looking for</a>
 </div>
 </div>
 </section>
 <!-- Group Facilitation -->
-<section class="bg-[#ede6f0]" id="facilitation">
+<section id="facilitation">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-14 md:py-16 flex flex-col md:flex-row-reverse gap-10 items-center">
-<div class="w-full md:w-1/2">
-<img alt="Group circle in Highland valley" class="w-full h-[360px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB92jAg58WtXuxu0SxS3dy_Nb0JGe5gQRrrZqgz0lAG_lfQWv4qDghnW8Vq4GgqgvLXNI2XYYLcsWrLp-SXNND7WB4CJN0Xy4HOWy1_q5OShdV1XJVeeK1128SSqHW3TelfLl8nsTM6y7zdhFkfRa4Kn3OiMstA5rEUIGcVIAp2o0ysDDMDZhFzjOp1oH4eTNAkrL5kvUwe8Z1SfXpiQR6ZuvHqvG6SLiU41dI4LUBm8I-nVnf4feBNFQ4VjtidOwWROlMRCdDhVtA"/>
+<div class="w-full md:w-2/5">
+<img alt="Group circle in Highland valley" class="w-full h-[460px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB92jAg58WtXuxu0SxS3dy_Nb0JGe5gQRrrZqgz0lAG_lfQWv4qDghnW8Vq4GgqgvLXNI2XYYLcsWrLp-SXNND7WB4CJN0Xy4HOWy1_q5OShdV1XJVeeK1128SSqHW3TelfLl8nsTM6y7zdhFkfRa4Kn3OiMstA5rEUIGcVIAp2o0ysDDMDZhFzjOp1oH4eTNAkrL5kvUwe8Z1SfXpiQR6ZuvHqvG6SLiU41dI4LUBm8I-nVnf4feBNFQ4VjtidOwWROlMRCdDhVtA"/>
 </div>
-<div class="w-full md:w-1/2 space-y-4">
-<h3 class="font-headline-lg text-xl md:text-2xl text-on-surface leading-snug">Group Facilitation</h3>
+<div class="w-full md:w-3/5 space-y-4">
+<h3 class="font-headline-lg font-bold text-2xl md:text-3xl text-on-surface leading-snug">Group Facilitation</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     I support organisations, teams and groups to work together more effectively, combining my experience of facilitating participatory community development and nonviolent communication.
                 </p>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     This could be team away-days, developing vision and purpose, supporting difficult conversations, facilitating decision-making, or helping teams find healthier ways of working with conflict. I help organisations create conflict management strategies, so clear agreements are in place before tensions escalate into rifts.
                 </p>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
-                    &ldquo;Sibongile&rsquo;s positive energy is contagious. She kept us all engaged for 2 days, created space for airing diverging views and re-energised our collective sense of purpose. The days would have been so different without her facilitation &ndash; relief and gratitude for what she achieved and how she went about it.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; IIED NRG</span>
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
+                    &ldquo;Sibongile&rsquo;s positive energy is contagious. She kept us all engaged for 2 days, created space for airing diverging views and re-energised our collective sense of purpose. The days would have been so different without her facilitation, relief and gratitude for what she achieved and how she went about it.&rdquo;
+                    <span class="block not-italic font-label-sm text-secondary mt-2">IIED NRG</span>
 </div>
-<a class="inline-block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-sm tracking-[0.05em] uppercase hover:bg-primary-container transition-all shadow-md" href="booking.html">Book a free 50m meeting to discuss what you seek</a>
+<a class="inline-flex items-center justify-center text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-sm text-base font-bold tracking-wide shadow-lg hover:bg-primary-container hover:shadow-xl hover:-translate-y-0.5 transition-all" href="booking.html?focus=facilitation">Book a free 50 minute meeting to discuss what you seek</a>
 </div>
 </div>
 </section>
 <!-- Grief Tending -->
-<section class="bg-[#e8e1ee]" id="grief-tending">
+<section id="grief-tending">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-14 md:py-16 flex flex-col md:flex-row gap-10 items-center">
-<div class="w-full md:w-1/2">
-<img alt="Quiet loch at sunset" class="w-full h-[360px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQKq3iQBKG88BuJ7k80IQtQltvrRjFGiHMWqJVZEioAOrE_-YN8DUK3lhT2Sg-kZ-xLliLYcW5YFBXQsLWhOFOBYbd2EiiuBVuIXIZStFX6O36LYA-Hlh0VVoEbz75rt0p1lFw96P-TB1eraQs0eIFytOL3eaRhURmp5MDJmu5ewfkCHwwATMyLkWn7qIIUduGO0kE_WuvV9_1nnnW-AqqrbieHdgnFAWJUVZIV8cm1G2L298O3tKiEcLHjX6RavImzdAtcWErnJ0"/>
+<div class="w-full md:w-2/5">
+<img alt="Quiet loch at sunset" class="w-full h-[460px] object-cover rounded-xl shadow-lg border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQKq3iQBKG88BuJ7k80IQtQltvrRjFGiHMWqJVZEioAOrE_-YN8DUK3lhT2Sg-kZ-xLliLYcW5YFBXQsLWhOFOBYbd2EiiuBVuIXIZStFX6O36LYA-Hlh0VVoEbz75rt0p1lFw96P-TB1eraQs0eIFytOL3eaRhURmp5MDJmu5ewfkCHwwATMyLkWn7qIIUduGO0kE_WuvV9_1nnnW-AqqrbieHdgnFAWJUVZIV8cm1G2L298O3tKiEcLHjX6RavImzdAtcWErnJ0"/>
 </div>
-<div class="w-full md:w-1/2 space-y-4">
-<h3 class="font-headline-lg text-xl md:text-2xl text-on-surface leading-snug">Grief Tending</h3>
+<div class="w-full md:w-3/5 space-y-4">
+<h3 class="font-headline-lg font-bold text-2xl md:text-3xl text-on-surface leading-snug">Grief Tending</h3>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Grief is a natural response to loss, change or things not turning out as we expected. I can enable you to be more fully in touch with grief that you carry, whether recent or long-held, personal or collective.
                 </p>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
                     Your grief may appear as sorrow, pain, anger or other feelings. It may arise from the loss of a loved one, a relationship, a community, a place, a way of life, an unrealised hope, or concerns about the wider world. Whatever form it takes, we will together welcome and encourage its expression. If you long to share grief in the companionship of others, I can help you create and facilitate community grief circles.
                 </p>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;I have a new capacity to say my words out loud, which come from my whole truth, and they allow me to cry. I cried today the mourning that's been held in for so long. In that time I&rsquo;m free from my shame about crying. I&rsquo;m grateful to you Sibongile for this gift to me. When I&rsquo;ve cried, said these prayerful words, I&rsquo;m closer to my realness.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Pa</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Pa</span>
 </div>
-<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-sm">
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary italic text-on-surface-variant font-body-md text-base">
                     &ldquo;I want to express my deep gratitude for the grief tending circles you facilitated last year. It was such an important experience for me, a safe and welcoming space where I could share my emotions and pain. I have deep fond memories of that evening around the fire that will always stay with me.&rdquo;
-                    <span class="block not-italic font-label-sm text-secondary mt-2">&mdash; Lu</span>
+                    <span class="block not-italic font-label-sm text-secondary mt-2">Lu</span>
 </div>
-<a class="inline-block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-sm tracking-[0.05em] uppercase hover:bg-primary-container transition-all shadow-md" href="booking.html">Book a free 50 min session</a>
+<a class="inline-flex items-center justify-center text-center bg-primary text-on-primary px-8 py-3.5 rounded-lg font-label-sm text-base font-bold tracking-wide shadow-lg hover:bg-primary-container hover:shadow-xl hover:-translate-y-0.5 transition-all" href="booking.html?focus=grief">Book a free 50 minute session</a>
 </div>
 </div>
 </section>
@@ -348,12 +353,9 @@
 <!-- About copy -->
 <div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-2xl flex flex-col justify-between border border-outline-variant/30 shadow-sm">
 <div>
-<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary">auto_awesome</span>
-</div>
 <h3 class="font-headline-md text-headline-md text-primary mb-4">Sibongile Pradhan</h3>
 <p class="font-body-md text-on-surface-variant leading-relaxed mb-4">
-                            I work with individuals, couples, families, colleagues, neighbours, community groups and organisational teams &mdash; to strengthen communication, explore challenges, develop understanding, navigate conflict, hold difficult conversations and express grief.
+                            I work with individuals, couples, families, colleagues, neighbours, community groups and organisational teams, to strengthen communication, explore challenges, develop understanding, navigate conflict, hold difficult conversations and express grief.
                         </p>
 <p class="font-body-md text-on-surface-variant leading-relaxed">
                             I believe that when people experience being heard and understood, new possibilities emerge. My work is grounded in the principles of Nonviolent Communication (NVC). To it all I bring warmth, curiosity and the intention to help people reconnect with themselves and one another.
@@ -403,8 +405,8 @@
 <div class="max-w-3xl mx-auto text-center space-y-8 relative z-10">
 <span class="font-label-sm text-primary-fixed tracking-[0.2em] uppercase">CONTACT</span>
 <h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary">Ready to start the conversation?</h2>
-<p class="font-body-md text-primary-fixed text-lg">
-                Every area of my work begins with a free 50-minute session &mdash; a chance to meet, talk about what you&rsquo;re looking for, and see whether working together feels right. I&rsquo;m based in Edinburgh yet happy to travel.
+<p class="font-body-md text-primary-fixed text-xl">
+                Every area of my work begins with a free 50-minute session, a chance to meet, talk about what you&rsquo;re looking for, and see whether working together feels right. I&rsquo;m based in Edinburgh yet happy to travel.
             </p>
 <div class="flex flex-col md:flex-row gap-4 justify-center pt-4">
 <a class="bg-secondary-fixed text-on-secondary-fixed px-10 py-4 rounded-lg font-label-sm tracking-[0.15em] hover:scale-105 transition-all duration-300 shadow-xl" href="booking.html">BOOK A FREE SESSION</a>
@@ -419,7 +421,7 @@
 <!-- Footer -->
 <footer class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-highest">
 <div class="mb-12 md:mb-0">
-<img src="assets/logo.png" alt="Sibongile logo" class="h-14 w-auto object-contain mb-4">
+<img src="assets/logo-sibongile-2.png" alt="Sibongile" class="h-12 w-auto object-contain mb-4">
 <p class="font-body-md text-on-surface-variant max-w-xs opacity-70">&copy; 2026 Sibongile Pradhan.<br>Mediation &bull; Coaching &bull; Deep Listening &bull; Facilitation &bull; Training &bull; Grief Tending</p>
 </div>
 <div class="flex flex-col md:flex-row gap-gutter">
