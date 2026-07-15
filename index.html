@@ -100,6 +100,8 @@
     </script>
 <style>
         html { scroll-behavior: smooth; }
+        /* Render the whole page 20% smaller on desktop */
+        @media (min-width: 768px) { body { zoom: 0.8; } }
         /* Offset in-page anchors so section tops clear the sticky header */
         section[id] { scroll-margin-top: 84px; }
         .material-symbols-outlined {
