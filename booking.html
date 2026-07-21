@@ -26,23 +26,23 @@
                     "on-primary-container": "#a98dc1",
                     "on-tertiary-fixed": "#301400",
                     "surface-container-low": "#f6f3f2",
-                    "background": "#fbf9f8",
+                    "background": "#f4f8f2",
                     "tertiary-container": "#4a280a",
-                    "surface-bright": "#fbf9f8",
-                    "on-background": "#1b1c1c",
+                    "surface-bright": "#f4f8f2",
+                    "on-background": "#16321e",
                     "secondary-fixed-dim": "#afceb9",
                     "surface-tint": "#6d5483",
                     "secondary-fixed": "#cbead4",
                     "on-tertiary-fixed-variant": "#653d1e",
                     "on-primary-fixed": "#27103c",
                     "on-secondary": "#ffffff",
-                    "on-surface": "#1b1c1c",
+                    "on-surface": "#16321e",
                     "inverse-primary": "#d9bbf1",
                     "surface-variant": "#e4e2e1",
-                    "on-surface-variant": "#4a454d",
+                    "on-surface-variant": "#3f5a49",
                     "tertiary-fixed-dim": "#f4bb92",
                     "secondary-container": "#c8e7d1",
-                    "surface": "#fbf9f8",
+                    "surface": "#f4f8f2",
                     "primary-fixed-dim": "#d9bbf1",
                     "primary-container": "#3d2652",
                     "primary": "#27103c",
@@ -112,7 +112,7 @@
 <!-- TopNavBar -->
 <header class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 top-0 sticky bg-background/80 backdrop-blur-xl border-b border-surface-container-highest">
 <a class="flex items-center gap-3" href="index.html">
-<img src="assets/logo-sibongile-2.png" alt="Sibongile" class="h-10 md:h-12 w-auto object-contain">
+<img src="assets/logo-sibongile-green.png" alt="Sibongile" class="h-10 md:h-12 w-auto object-contain">
 </a>
 <nav class="hidden md:flex items-center gap-gutter">
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-sm text-lg" href="index.html">Home</a>
@@ -137,22 +137,22 @@
 <main>
 <!-- Booking Hero -->
 <section class="relative px-margin-mobile md:px-margin-desktop pt-16 pb-12 overflow-hidden bg-surface">
-<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-primary-fixed/30 blur-[120px] -z-10"></div>
+<div class="absolute -top-1/2 -right-1/4 w-[1000px] h-[1000px] rounded-full bg-secondary-fixed/40 blur-[120px] -z-10"></div>
 <div class="max-w-container-max mx-auto text-center">
 <span class="font-label-sm text-on-primary-fixed-variant tracking-[0.2em] uppercase">BOOKING</span>
-<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight mt-4">Book a Free 50-Minute Session</h1>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight mt-4">Book a Free 50-Minute Online Session</h1>
 <p class="font-body-md text-on-surface-variant text-lg max-w-2xl mx-auto mt-6">
-            Every area of my work begins with a free 50-minute session (no strings), a chance to meet, sample a session or discuss what you&rsquo;re looking for, and see whether working together feels right.
+            Every area of my work begins with a free 50-minute online session (no strings), a chance to meet, sample an online session or discuss what you&rsquo;re looking for, and see whether working together feels right.
         </p>
 </div>
 </section>
 <!-- Booking form + info -->
-<section class="px-margin-mobile md:px-margin-desktop py-16 bg-[#f5f0f7]">
+<section class="px-margin-mobile md:px-margin-desktop py-16 bg-[#eef5ef]">
 <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
 <!-- Form -->
 <div class="md:col-span-7 bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/30 shadow-sm">
-<h2 class="font-headline-md text-headline-md text-primary mb-2">Request your free session</h2>
-<p class="font-body-md text-on-surface-variant mb-8">Fill in the form and it will open an email to Sibongile with your details, she&rsquo;ll reply to arrange a time.</p>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Request your free online session or get in touch with a query.</h2>
+<p class="font-body-md text-on-surface-variant mb-8">Your completed form will open in Sibongile&rsquo;s email and she will get back to you.</p>
 <form class="space-y-6" id="booking-form">
 <div>
 <label class="block font-label-sm text-label-sm text-on-surface mb-2" for="name">Your name <span class="text-error">*</span></label>
@@ -163,14 +163,14 @@
 <input class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="email" name="email" required="" type="email">
 </div>
 <div>
-<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="area">What would you like the session to focus on?</label>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2" for="area">What would you like the online session to focus on?</label>
 <select class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="area" name="area">
 <option data-focus="nvc">NVC Coaching: sample coaching</option>
 <option data-focus="nvc-training">NVC Training: discuss training needs</option>
-<option data-focus="deep-listening">Deep Listening akin to Counselling: initial session</option>
+<option data-focus="deep-listening">Deep Listening akin to Counselling: initial online session</option>
 <option data-focus="mediation">Mediation: talk about what you're looking for</option>
 <option data-focus="facilitation">Group Facilitation: discuss what you seek</option>
-<option data-focus="grief">Grief Tending: initial session</option>
+<option data-focus="grief">Grief Tending: initial online session</option>
 <option data-focus="unsure">Not sure yet: let's talk</option>
 </select>
 </div>
@@ -178,8 +178,7 @@
 <label class="block font-label-sm text-label-sm text-on-surface mb-2" for="message">Anything you'd like to share in advance? <span class="text-on-surface-variant font-normal">(optional)</span></label>
 <textarea class="w-full rounded-lg border-outline-variant bg-background focus:border-primary focus:ring-primary font-body-md" id="message" name="message" rows="5"></textarea>
 </div>
-<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-sm tracking-[0.1em] uppercase hover:bg-primary-container transition-all shadow-md" type="submit">Send booking request</button>
-<p class="font-body-md text-on-surface-variant text-sm">Prefer to write directly? Email <a class="underline text-primary" href="mailto:sibongilep@gmail.com">sibongilep@gmail.com</a></p>
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-sm tracking-[0.1em] uppercase hover:bg-primary-container transition-all shadow-md" type="submit">Send request</button>
 </form>
 </div>
 <!-- Info panel -->
@@ -188,31 +187,31 @@
 <h3 class="font-headline-md text-headline-md text-primary mb-6">What to expect</h3>
 <ul class="space-y-5">
 <li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#553d6a] mt-1">schedule</span>
-<p class="font-body-md text-on-surface-variant">A free 50-minute session, no strings, no obligation to continue.</p>
+<span class="material-symbols-outlined text-secondary mt-1">schedule</span>
+<p class="font-body-md text-on-surface-variant">A free 50-minute online session, no strings, no obligation to continue.</p>
 </li>
 <li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#553d6a] mt-1">forum</span>
+<span class="material-symbols-outlined text-secondary mt-1">forum</span>
 <p class="font-body-md text-on-surface-variant">Space to sample coaching or deep listening, or to talk through mediation, facilitation, training or grief tending needs.</p>
 </li>
 <li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#553d6a] mt-1">lock</span>
+<span class="material-symbols-outlined text-secondary mt-1">lock</span>
 <p class="font-body-md text-on-surface-variant">Private and confidential, held without judgment.</p>
 </li>
 <li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#553d6a] mt-1">location_on</span>
-<p class="font-body-md text-on-surface-variant">Based in Edinburgh yet happy to travel; sessions also available online.</p>
+<span class="material-symbols-outlined text-secondary mt-1">location_on</span>
+<p class="font-body-md text-on-surface-variant">Based in Edinburgh yet happy to travel; online sessions also available.</p>
 </li>
 </ul>
 </div>
-<div class="bg-primary-container p-8 rounded-2xl relative overflow-hidden">
+<div class="bg-[#22402e] p-8 rounded-2xl relative overflow-hidden">
 <div class="absolute right-0 top-0 w-2/3 h-full opacity-20 pointer-events-none">
-<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-fixed via-transparent to-transparent"></div>
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary-fixed via-transparent to-transparent"></div>
 </div>
 <blockquote class="font-headline-md text-headline-md italic text-on-primary relative z-10">
                 &ldquo;When people experience being heard and understood, new possibilities emerge.&rdquo;
             </blockquote>
-<p class="font-label-sm text-primary-fixed uppercase tracking-widest text-[12px] mt-6 relative z-10">Sibongile Pradhan</p>
+<p class="font-label-sm text-secondary-fixed uppercase tracking-widest text-[12px] mt-6 relative z-10">Sibongile Pradhan</p>
 </div>
 </div>
 </div>
@@ -221,12 +220,11 @@
 <!-- Footer -->
 <footer class="w-full px-margin-mobile md:px-margin-desktop py-24 flex flex-col md:flex-row justify-between items-start md:items-center bg-surface-container-highest">
 <div class="mb-12 md:mb-0">
-<img src="assets/logo-sibongile-2.png" alt="Sibongile" class="h-12 w-auto object-contain mb-4">
+<img src="assets/logo-sibongile-green.png" alt="Sibongile" class="h-12 w-auto object-contain mb-4">
 <p class="font-body-md text-on-surface-variant max-w-xs opacity-70">&copy; 2026 Sibongile Pradhan.<br>Mediation &bull; Coaching &bull; Deep Listening &bull; Facilitation &bull; Training &bull; Grief Tending</p>
 </div>
 <div class="flex flex-col md:flex-row gap-gutter">
 <div class="flex flex-col gap-4">
-<a class="text-on-surface hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="mailto:sibongilep@gmail.com">sibongilep@gmail.com</a>
 <span class="text-on-surface-variant font-label-sm text-label-sm opacity-70">Edinburgh, Scotland</span>
 </div>
 <div class="flex flex-col gap-4">
@@ -259,10 +257,10 @@
         const email = document.getElementById('email').value.trim();
         const area = document.getElementById('area').value;
         const message = document.getElementById('message').value.trim();
-        const subject = encodeURIComponent('Free 50-minute session request for ' + name);
+        const subject = encodeURIComponent('Free 50-minute online session request for ' + name);
         const body = encodeURIComponent(
             'Hello Sibongile,\n\n' +
-            'I would like to book a free 50-minute session.\n\n' +
+            'I would like to book a free 50-minute online session.\n\n' +
             'Name: ' + name + '\n' +
             'Email: ' + email + '\n' +
             'Focus: ' + area + '\n' +
