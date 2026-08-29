@@ -4,8 +4,6 @@ Marketing site for Sibongile Pradhan, a practitioner offering mediation,
 coaching, deep listening, facilitation, training and grief tending, grounded
 in Nonviolent Communication (NVC). Based in Edinburgh.
 
-**Live:** https://alicia-stem.github.io/sibongile_website/
-
 ## Structure
 
 - **`index.html`** — single long-scrolling homepage with four sections:
@@ -34,8 +32,9 @@ python3 -m http.server 8722
 
 ## Deployment
 
-Hosted on GitHub Pages from the `main` branch (root). Pushing to `main`
-updates the live site within a minute or so.
+Not currently published. GitHub Pages has been turned off and the repository
+is private; the site is plain static files, so any static host will serve the
+repository root as-is.
 
 ## Notes
 
